@@ -138,7 +138,7 @@ module.exports.handleReply = async function({
             var txt = '[⚜️] ━━━━━━ ' + data.commandCategory + ' ━━━━━━ [⚜️]\n\n',
             count = 0;
             for (const name of data.commandsName) txt += `${++count}. ${name}\n`;
-            txt += `\n━━━━━━━━━━━━━━━━━━━━━\n[⚜️] ➩ Hiện có: ${global.client.commands.size} lệnh\n[⚜️] ➩ Reply từ 1 đến ${data.commandsName.length} để chọn\n[⚜️] ➩ Contact: m.me/danghoangbaohuy.milo\n[⚜️] ➩ Zalo: 0372768928\n━━━━━━━━━━━━━━━━━━━━━\n[⚜️]=== 『 𝐁𝐎𝐓 𝐉𝐑𝐓 』 ===[⚜️]`;
+            txt += `\n━━━━━━━━━━━━━━━━━━━━━\n[⚜️] ➩ Hiện có: ${global.client.commands.size} lệnh\n[⚜️] ➩ Reply từ 1 đến ${data.commandsName.length} để chọn\n[⚜️] ➩ Contact: m.me/danghoangbaohuy.milo\n[⚜️] ➩ Zalo: 0372768928\n━━━━━━━━━━━━━━━━━━━━━\n[⚜️]=== 『 𝐁𝐎𝐓 𝐒𝐇𝐈𝐊𝐈𝐌𝐎𝐑𝐈 』 ===[⚜️]`;
             const msg = sendAttachments.status ? {
                 body: txt,
                 attachment: await images()}: txt;

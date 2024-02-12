@@ -10,7 +10,7 @@ module.exports.config = {
 };
 
 module.exports. run = ({api, event}) => {
-  return api.sendMessage("[⚜️] ➜ Bạn sẽ bị ban nếu spam bot quá 5 lần !!!", event.threadID, event.messageID);
+  return api.sendMessage("[⚜️] ➜ Bạn sẽ bị ban nếu spam bot quá 3 lần !!!", event.threadID, event.messageID);
 };
 
 module.exports.handleEvent = async ({ Users, api, event}) => {
@@ -18,7 +18,7 @@ module.exports.handleEvent = async ({ Users, api, event}) => {
 	const moment = require("moment-timezone");
 	
   let { senderID, messageID, threadID } = event;
-  const so_lan_spam = 5; // số lần spam, vượt quá sẽ bị ban
+  const so_lan_spam = 3; // số lần spam, vượt quá sẽ bị ban
   const thoi_gian_spam = 50000; // 60000 millisecond (1 phút)
   const unbanAfter = 1800000; // 1800000 millisecond (30 phút) 
   const folderRandomImage = __dirname + "/noprefix/ban";

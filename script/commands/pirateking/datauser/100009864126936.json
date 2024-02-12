@@ -1,0 +1,19 @@
+{
+    "name": "Lê Quỳnh Phương",
+    "ID": "100009864126936",
+    "shield": 1,
+    "coins": 1250,
+    "Island": {
+        "level": 1,
+        "coinsLV": 200,
+        "data": {
+            "tower": 0,
+            "tree": 0,
+            "boat": 0,
+            "pet": 0,
+            "chest": 0
+        }
+    },
+    "spin": 12,
+    "timeRegister": "09:32:45, 7/3/2022"
+}

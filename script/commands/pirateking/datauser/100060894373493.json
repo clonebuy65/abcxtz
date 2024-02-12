@@ -1,0 +1,19 @@
+{
+    "name": "Giang Nguyen",
+    "ID": "100060894373493",
+    "shield": 3,
+    "coins": 21562,
+    "Island": {
+        "level": 1,
+        "coinsLV": 200,
+        "data": {
+            "tower": 0,
+            "tree": 0,
+            "boat": 0,
+            "pet": 0,
+            "chest": 0
+        }
+    },
+    "spin": 5,
+    "timeRegister": "08:23:44, 7/3/2022"
+}

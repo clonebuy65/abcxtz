@@ -1,0 +1,19 @@
+{
+    "name": "Đào Thị Kiều Anh 🌹💝",
+    "ID": "1824557330",
+    "shield": 3,
+    "coins": 20000,
+    "Island": {
+        "level": 1,
+        "coinsLV": 200,
+        "data": {
+            "tower": 0,
+            "tree": 0,
+            "boat": 0,
+            "pet": 0,
+            "chest": 0
+        }
+    },
+    "spin": 49,
+    "timeRegister": "11:18:44, 19/10/2023"
+}

@@ -1,0 +1,37 @@
+{
+    "total": [
+        {
+            "id": "100037218437125",
+            "count": 199
+        },
+        {
+            "id": "100005329909269",
+            "count": 7
+        }
+    ],
+    "week": [
+        {
+            "id": "100037218437125",
+            "count": 39,
+            "name": "Nguyen Duc Tai "
+        },
+        {
+            "id": "100005329909269",
+            "count": 0,
+            "name": "Nguyễn Thanh Kiệt"
+        }
+    ],
+    "day": [
+        {
+            "id": "100037218437125",
+            "count": 12,
+            "name": "Nguyen Duc Tai "
+        },
+        {
+            "id": "100005329909269",
+            "count": 0,
+            "name": "Nguyễn Thanh Kiệt"
+        }
+    ],
+    "time": 1
+}

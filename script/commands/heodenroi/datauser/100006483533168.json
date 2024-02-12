@@ -1,0 +1,18 @@
+{
+    "name": "Su Aries",
+    "ID": "100006483533168",
+    "shield": 3,
+    "coins": 25000,
+    "Island": {
+        "level": 1,
+        "coinsLV": 200,
+        "data": {
+            "tower": 0,
+            "tree": 0,
+            "pool": 0,
+            "pet": 0
+        }
+    },
+    "spin": 19,
+    "timeRegister": "9/2/2022, 7:15:21 PM"
+}

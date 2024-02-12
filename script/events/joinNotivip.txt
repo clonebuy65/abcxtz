@@ -1,0 +1,122 @@
+module.exports.config = {
+  name: "joinNoti",
+  eventType: ["log:subscribe"],
+  version: "1.0.4",
+  credits: "Mirai Team ",//modthem by tpk
+  description: "Thông báo bot hoặc người vào nhóm",
+  dependencies: {
+    "fs-extra": ""
+  }
+};
+
+module.exports.circle = async (image) => {
+  const jimp = global.nodemodule["jimp"];
+  image = await jimp.read(image);
+  image.circle();
+  return await image.getBufferAsync("image/png");
+}
+module.exports.run = async function({ api, event, Users }) {
+  const { loadImage, createCanvas, registerFont } = require("canvas");
+  const fontlink = 'https://drive.google.com/u/0/uc?id=1grxN6VBB7zdRCUISEoM72cp1UKXEDKtq&export=download'
+
+  const moment = require("moment-timezone");
+  const timeNow = moment.tz("Asia/Ho_Chi_Minh").format("DD/MM/YYYY || HH:mm:ss");
+  const fs = require('fs-extra')
+  var fullYear = global.client.getTime("fullYear");
+  var getHours = await global.client.getTime("hours");
+  var session = `${getHours < 3 ? "đêm khuya" : getHours < 8 ? "buổi sáng sớm" : getHours < 12 ? "buổi trưa" : getHours < 17 ? "buổi chiều" : getHours < 23 ? "buổi tối" : "đêm khuya"}`
+  const { join } = global.nodemodule["path"];
+  const { threadID } = event;
+  if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
+    api.changeNickname(`[ ${global.config.PREFIX} ] • ${(!global.config.BOTNAME) ? "𝐁𝐎𝐓 𝐓𝐩𝐤𓃲" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
+    const fs = require("fs");
+    api.sendMessage("[ 𝗞𝗜𝗘̂̉𝗠 𝗗𝗨𝗬𝗘̣̂𝗧 ] → 𝗧𝗶𝗲̂́𝗻 𝗵𝗮̀𝗻𝗵 𝗸𝗶𝗲̂̉𝗺 𝘁𝗿𝗮 𝗱𝗮𝗻𝗵 𝘀𝗮́𝗰𝗵 𝗽𝗵𝗲̂ 𝗱𝘂𝘆𝗲̣̂𝘁...", threadID, () => {
+      setTimeout(function() {
+        if (!(JSON.parse(require("fs-extra").readFileSync(__dirname + "/../commands/cache/approvedThreads.json"))).find(n => n == threadID)) api.sendMessage(`==『 𝗞𝗘̂́𝗧 𝗡𝗢̂́𝗜 𝗧𝗛𝗔̂́𝗧 𝗕𝗔̣𝗜 』==\n━━━━━━━━━━━━━━━━━━\n→ 𝗦𝗮𝗼 𝗸𝗵𝗶 𝗸𝗶𝗲̂̉𝗺 𝘁𝗿𝗮 𝘁𝗿𝗼𝗻𝗴 𝗱𝗮𝗻𝗵 𝘀𝗮́𝗰𝗵 𝗽𝗵𝗲̂ 𝗱𝘂𝘆𝗲̣̂𝘁 𝗯𝗼𝘁 𝗽𝗵𝗮́𝘁 𝗵𝗶𝗲̣̂𝗻 𝗻𝗵𝗼́𝗺 𝗯𝗮̣𝗻 𝘃𝗮̂̃𝗻 𝗰𝗵𝘂𝗮 đ𝘂̛𝗼̛̣𝗰 𝗮𝗱𝗺𝗶𝗻 𝗯𝗼𝘁 𝗱𝘂𝘆𝗲̣̂𝘁\n━━━━━━━━━━━━━━━━━━\n→ 𝗡𝗲̂́𝘂 𝗯𝗮̣𝗻 𝗺𝘂𝗼̂́𝗻 đ𝘂̛𝗼̛̣𝗰 𝗱𝘂𝘆𝗲̣̂𝘁 𝗱𝘂̀𝗻𝗴 ` + global.config.PREFIX + `duyetbox 💓\n\n⏰====「${timeNow}」====⏰`, threadID)
+        else api.sendMessage(`==『 𝗞𝗘̂́𝗧 𝗡𝗢̂́𝗜 𝗧𝗛𝗔̀𝗡𝗛 𝗖𝗢̂𝗡𝗚 』==\n━━━━━━━━━━━━━━━━━━\n→ 𝗦𝗮𝗼 𝗸𝗵𝗶 𝗸𝗶𝗲̂̉𝗺 𝘁𝗿𝗮 𝘁𝗿𝗼𝗻𝗴 𝗱𝗮𝗻𝗵 𝘀𝗮́𝗰𝗵 𝗽𝗵𝗲̂ 𝗱𝘂𝘆𝗲̣̂𝘁 𝗯𝗼𝘁 𝗽𝗵𝗮́𝘁 𝗵𝗶𝗲̣̂𝗻 𝗻𝗵𝗼́𝗺 𝗯𝗮̣𝗻 đ𝗮̃ đ𝘂̛𝗼̛̣𝗰 𝗔𝗱𝗺𝗶𝗻 𝗱𝘂𝘆𝗲̣̂𝘁\n━━━━━━━━━━━━━━━━━━\n→ 𝗛𝗶𝗲̣̂𝗻 𝘁𝗮̣𝗶 𝗯𝗼𝘁 đ𝗮𝗻𝗴 𝗰𝗼́ ${commands.size} 𝗹𝗲̣̂𝗻𝗵 💙\n→ 𝗗𝘂̀𝗻𝗴 !𝗵𝗲𝗹𝗽 đ𝗲̂̉ 𝘅𝗲𝗺 𝘁𝗼𝗮̀𝗻 𝗯𝗼̣̂ 𝗹𝗲̣̂𝗻𝗵 💛\n→ !𝗵𝗲𝗹𝗽 + 𝘁𝗲̂𝗻 𝗹𝗲̣̂𝗻𝗵 đ𝗲̂̉ 𝘅𝗲𝗺 𝗰𝗵𝗶 𝘁𝗶𝗲̂́𝘁 💜\n\n⏰====「${timeNow}」====⏰`, threadID)
+      }, 5000);
+    })
+  }
+  else {
+    try {
+      const { createReadStream, existsSync, mkdirSync } = global.nodemodule["fs-extra"];
+      const { loadImage, createCanvas } = require("canvas");
+      const fs = global.nodemodule["fs-extra"];
+      const axios = global.nodemodule["axios"];
+      if (!fs.existsSync(__dirname + `/cache/1.ttf`)) {
+        let getfont2 = (await axios.get(`https://drive.google.com/u/0/uc?id=1DuI-ou9OGEkII7n8odx-A7NIcYz0Xk9o&export=download`, { responseType: "arraybuffer" })).data;
+        fs.writeFileSync(__dirname + `/cache/1.ttf`, Buffer.from(getfont2, "utf-8"));
+      };
+
+      var tpk = ["https://i.imgur.com/AHZ1qNh.jpeg",
+        "https://i.imgur.com/qAEHIgA.jpeg",
+        "https://i.imgur.com/7z7ywog.jpeg"];
+      let threadInfo = await api.getThreadInfo(event.threadID);
+      let pathImg = __dirname + "/cache/join.png";
+      let pathAvt1 = __dirname + "/cache/Avtmot1.png";
+      let { threadName, participantIDs } = await api.getThreadInfo(threadID);
+
+      const threadData = global.data.threadData.get(parseInt(threadID)) || {};
+      const path = join(__dirname, "cache", "joinGif");
+      const pathGif = join(path, `hi.mp4`);
+
+      var mentions = [], nameArray = [], memLength = [], iduser = [], i = 0;
+
+      for (id in event.logMessageData.addedParticipants) {
+        const userName = event.logMessageData.addedParticipants[id].fullName;
+        iduser.push(event.logMessageData.addedParticipants[id].userFbId.toString());
+
+
+        nameArray.push(userName);
+        mentions.push({ tag: userName, id: event.senderID });
+        memLength.push(participantIDs.length - i++);
+
+        if (!global.data.allUserID.includes(id)) {
+          await Users.createData(id, { name: userName, data: {} });
+          global.data.userName.set(id, userName);
+          global.data.allUserID.push(id);
+          console.log(`Có TVM ${nameArray}`)
+        }
+      }
+      memLength.sort((a, b) => a - b);
+      var getData = await Users.getData(event.author)
+      var nameAuthor = typeof getData.name == "undefined" ? "Người dùng tự vào" : getData.name
+      var background = [`${tpk}`];
+      var rd = background[Math.floor(Math.random() * background.length)];
+      let getAvtmot = (
+        await axios.get(`https://graph.facebook.com/${iduser}/picture?height=1500&width=1500&access_token=463372798834978|csqGyA8VWtIhabZZt-yhEBStl9Y`,
+          { responseType: "arraybuffer" }
+        )
+      ).data;
+      fs.writeFileSync(pathAvt1, Buffer.from(getAvtmot, "utf-8"));
+      tpk1 = await this.circle(pathAvt1);
+      let getbackground = (
+        await axios.get(`${rd}`, {
+          responseType: "arraybuffer",
+        })
+      ).data;
+      let baseImage = await loadImage(pathImg);
+      let baseAvt1 = await loadImage(tpk1);
+      //let baseAvt2 = await loadImage(pathAvt2);		
+      //let basebox = await loadImage(pathbox);   
+      let canvas = createCanvas(baseImage.width, baseImage.height);
+      let ctx = canvas.getContext("2d");
+      ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
+      ctx.drawImage(baseAvt1, 70, 49, 221, 221);
+      fs.writeFileSync(pathImg, Buffer.from(getbackground, "utf-8"));
+      registerFont(__dirname + `/cache/1.ttf`, {
+        family: "1"
+      });
+      ctx.font = `75px 1`;
+      ctx.fillText(`Welcome to ${threadName}`, 900, 400);
+      //ctx.drawImage(basebox, 550, 76, 173, 95);	
+      //ctx.drawImage(baseAvt2, 550, 210, 175, 150);	
+      const imageBuffer = canvas.toBuffer();
+      fs.writeFileSync(pathImg, imageBuffer);
+      fs.removeSync(pathAvt1);
+      //fs.removeSync(pathbox);
+      //fs.removeSync(pathAvt2);
+      api.sendMessage({ body:/*`${threadName} \n${nameArray}\n${memLength}\n${nameAuthor}${fullYear}\n${session}\nhttps://www.facebook.com/${iduser}\n\nhttps://www.facebook.com/${event.author}`*/`cac`, attachment: fs.createReadStream(pathImg) }, event.threadID, () => fs.unlinkSync(pathImg));
+    } catch (e) { return console.log(e) };
+  }
+}

@@ -1,0 +1,1930 @@
+{
+    "user": [
+        {
+            "userID": "100064668588393",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 1392
+            },
+            "timestamp": 1702060416326
+        },
+        {
+            "userID": "100049618576958",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 127
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100094428836977",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 115
+            },
+            "timestamp": 1704647095907
+        },
+        {
+            "userID": "100005329909269",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 2901
+            },
+            "timestamp": 1702060416326
+        },
+        {
+            "userID": "100075542135868",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 654
+            },
+            "timestamp": 1702060416327
+        },
+        {
+            "userID": "100056932834061",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 40
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100064908113215",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 25
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100075223416555",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 141
+            },
+            "timestamp": 1702060416327
+        },
+        {
+            "userID": "100074012258512",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 16
+            },
+            "timestamp": 1704647057016
+        },
+        {
+            "userID": "100088901474496",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 26
+            },
+            "timestamp": 1702060416326
+        },
+        {
+            "userID": "100089927892192",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 14
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100013986663419",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 13
+            },
+            "timestamp": 1702976714570
+        },
+        {
+            "userID": "100078743095593",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 197
+            },
+            "timestamp": 1702060416327
+        },
+        {
+            "userID": "100029511038255",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 12
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100047191831379",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 10
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100076784896983",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 10
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100073867960119",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 641
+            },
+            "timestamp": 1702060416326
+        },
+        {
+            "userID": "1824557330",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 404
+            },
+            "timestamp": 1702060416326
+        },
+        {
+            "userID": "100054764350261",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 114
+            },
+            "timestamp": 1702060416326
+        },
+        {
+            "userID": "100019541161030",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 111
+            },
+            "timestamp": 1702060416327
+        },
+        {
+            "userID": "100057937041704",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 1043
+            },
+            "timestamp": 1702060416327
+        },
+        {
+            "userID": "100049247448894",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 3
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100039254613735",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 3
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100040492403667",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 3
+            },
+            "timestamp": 1704645173625
+        },
+        {
+            "userID": "100019408162783",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 2
+            },
+            "timestamp": 1702761367035
+        },
+        {
+            "userID": "100082437107531",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 2
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100068802335799",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 2
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100028354445493",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 187
+            },
+            "timestamp": 1702172034455
+        },
+        {
+            "userID": "100068726839223",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 17
+            },
+            "timestamp": 1702855441029
+        },
+        {
+            "userID": "100072939918345",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 86
+            },
+            "timestamp": 1702060416326
+        },
+        {
+            "userID": "100081858086684",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 2
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100032150296919",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 1
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100073073284750",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 1
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100026055891529",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 1
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100075545290543",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 1
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100079755815730",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 1
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100072557541542",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 1
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "61553440127023",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 1
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100075030499362",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 1
+            },
+            "timestamp": 1704647168188
+        },
+        {
+            "userID": "100059379384308",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 434
+            },
+            "timestamp": 1702060416327
+        },
+        {
+            "userID": "100065182492864",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 29
+            },
+            "timestamp": 1702060416326
+        },
+        {
+            "userID": "100053830054808",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 14
+            },
+            "timestamp": 1702060416327
+        },
+        {
+            "userID": "100095377312149",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 1
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100012640098064",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 1
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100094455985969",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 1
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100023534625157",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 558
+            },
+            "timestamp": 1702325305517
+        },
+        {
+            "userID": "100052322913824",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 92
+            },
+            "timestamp": 1702060416326
+        },
+        {
+            "userID": "100077714349085",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 154
+            },
+            "timestamp": 1702323731182
+        },
+        {
+            "userID": "100073027520880",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 8
+            },
+            "timestamp": 1702060416327
+        },
+        {
+            "userID": "100014129779055",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 69
+            },
+            "timestamp": 1702060416326
+        },
+        {
+            "userID": "100025679772426",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 15
+            },
+            "timestamp": 1702060416327
+        },
+        {
+            "userID": "100057350020281",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 26
+            },
+            "timestamp": 1702060416327
+        },
+        {
+            "userID": "100074145561973",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 31
+            },
+            "timestamp": 1702060416327
+        },
+        {
+            "userID": "100051992076741",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 36
+            },
+            "timestamp": 1702060416327
+        },
+        {
+            "userID": "100085749616993",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 204
+            },
+            "timestamp": 1702060416327
+        },
+        {
+            "userID": "100053991638506",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 6
+            },
+            "timestamp": 1702060416326
+        },
+        {
+            "userID": "100077971004043",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 21
+            },
+            "timestamp": 1702060416327
+        },
+        {
+            "userID": "100064691329739",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 1
+            },
+            "timestamp": 1702060416326
+        },
+        {
+            "userID": "100043756724700",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1702060416326
+        },
+        {
+            "userID": "100054690902657",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1702060416326
+        },
+        {
+            "userID": "100090070061407",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1702060416327
+        },
+        {
+            "userID": "100026743158352",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "61553846507576",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100091894370960",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100047089535258",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100086601777448",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100026005823127",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100050602839793",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100024336585519",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100091354596580",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100089064501198",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100016344375946",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100036894253077",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100070380525734",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100026718613801",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "61552937857876",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100043932653961",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100067659468862",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100085289577975",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100035854096112",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100074571597180",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100015807812833",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100064477461391",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100089611241119",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100043758164344",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100008126743240",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100022842612175",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100006634054441",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100027517838942",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100000716412697",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100071280678281",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100044577426670",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100063662370469",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100025162601285",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100009448312650",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100013624960266",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100029243087229",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100053001215189",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100016592951688",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100089850007519",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100028937101442",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100061122010466",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100012726974431",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100057341829572",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100010714159222",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100010024005617",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100013031925806",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100053933612849",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100068574284687",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100082977887694",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100090377351383",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100025684547520",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100034122373797",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100061734683754",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100070979661701",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100090435522594",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100035599427404",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100060553150721",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100086775288997",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100026658670882",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "61553912168041",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100041717113070",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100021880626425",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100037962682812",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100067241117797",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100023961983366",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100044155958996",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100087561262853",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100080470604231",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100087617284642",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100036161203963",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100093409711999",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100037991031465",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100073962706568",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100033880071106",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100069945234078",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100048063282436",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100063680887303",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100023542371246",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100035276284866",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100091250401777",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100083779875687",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100083009652681",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100039773019203",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100068640307275",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100048784740280",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100060930975356",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100019654841066",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100089311118839",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100092468573715",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "61551839613203",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100061600537250",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100034436557370",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100029361232057",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100057723409381",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100059179730103",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100053653098284",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100094462261930",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100036807971442",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100003681118254",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100090618660162",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100037101231387",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "61552901800088",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100078759851136",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100011772844962",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100044982114168",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "766494624",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "61552725170643",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100023724411615",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100093026747618",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100078796564219",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100046554903626",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100065563803743",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100069481382880",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100054068648765",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100023894783956",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100079132909956",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100040118282797",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100036419073825",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100080697876838",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100064289508532",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100039854984859",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100005838228642",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100057261706661",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100048245822719",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100070819756271",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100050724464023",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100090218947300",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100071569899745",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "659303840",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100089557176057",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "61551504681706",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100088910119086",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100074259314942",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "61553594984071",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100086006465045",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100045837978963",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100041436021411",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100035971321882",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100015122709161",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100041200188758",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100084040158508",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100042060095854",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100009485924272",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100089281851470",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100063608900069",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100092281495789",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "61555467594504",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100051657701990",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100079977259571",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100093410150248",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100048161250847",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100030902332926",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        },
+        {
+            "userID": "100030554108879",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644940391
+        }
+    ]
+}

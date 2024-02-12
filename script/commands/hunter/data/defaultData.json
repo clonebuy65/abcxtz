@@ -1,0 +1,435 @@
+{
+    "defaultHunter": {
+        "magican": {
+            "exp": 0,
+            "points": 0,
+            "health_point": 308,
+            "mana_point": 348,
+            "physical_attack": 51,
+            "magical_attack": 63,
+            "physical_defense": 19,
+            "magical_defense": 7,
+            "attack_speed": 3,
+            "recovery_mana": 11,
+            "skills": []
+        },
+        "gladiator": {
+            "exp": 0,
+            "points": 0,
+            "health_point": 462,
+            "mana_point": 168,
+            "physical_attack": 76,
+            "magical_attack": 0,
+            "physical_defense": 60,
+            "magical_defense": 40,
+            "attack_speed": 16,
+            "recovery_mana": 5,
+            "skills": []
+        },
+        "archer": {
+            "exp": 0,
+            "points": 0,
+            "health_point": 286,
+            "mana_point": 235,
+            "physical_attack": 81,
+            "magical_attack": 5,
+            "physical_defense": 17,
+            "magical_defense": 6,
+            "attack_speed": 24,
+            "recovery_mana": 6,
+            "skills": []
+        },
+        "healer": {
+            "exp": 0,
+            "points": 0,
+            "health_point": 280,
+            "mana_point": 256,
+            "physical_attack": 1,
+            "magical_attack": 1,
+            "physical_defense": 84,
+            "magical_defense": 59,
+            "attack_speed": 1,
+            "recovery_mana": 13,
+            "skills": []
+        }
+    },
+    "skills": {
+        "magican": {
+            "energy_ball": {
+                "name": "Bóng Năng Lượng",
+                "description": "Tập trung sức mạnh của bản thân vào một quả cầu năng lượng phóng vào mục tiêu.",
+                "type": "energy",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "evil_spirits": {
+                "name": "Triệu Tập Linh Hồn",
+                "description": "Triệu hồi hàng loạt những linh hồn kỳ dị và đánh liên tục vào đối phương từ nhiều phía.",
+                "type": "soul",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "dead_land": {
+                "name": "Vùng Đất Chết",
+                "description": "Nguyền rủa một khu vực khiến kẻ địch bị nguyền rủa đến chết.",
+                "type": "dark",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "hell_fire": {
+                "name": "Ngọn Lửa Địa Ngục",
+                "description": "Triệu hồi ngon lửa của địa ngục thiêu rụi kẻ địch trong phạm vi.",
+                "type": "fire",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "poison": {
+                "name": "Sức Mạnh Độc Tố",
+                "description": "Làm đối phương bị nhiễm độc và chết một cách từ từ.",
+                "type": "poison",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:nova": {
+                "name": "Bùng Nổ Năng Lượng",
+                "description": "Tập trung năng lượng bao trùm bản thân, khi bùng nổ sẽ tấn công tất cả mục tiêu xung quanh",
+                "type": "energy",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:black_hold": {
+                "name": "Vực sâu",
+                "description": "Gây động đất tạo ra một vực thẳm chôn vùi kẻ địch trong phạm vi của nó.",
+                "type": "dark",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:soul_forced": {
+                "name": "Linh Hồn Rằng Buộc",
+                "description": "Triệu hồi một quả cầu hắc ám và ném ra, kẻ địch bị trúng phải sẽ bị hút linh hồn và bị nguyền rủa.",
+                "type": "soul",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:inferno": {
+                "name": "Vòng Tròn Lửa",
+                "description": "Những ngọn lửa của địa ngục sẽ bao bọc lấy người bản thân và đốt cháy bất kì ai ở gần nó.",
+                "type": "fire",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:decay": {
+                "name": "Mưa Độc Tố",
+                "description": "Triệu hồi một cơn mưa độc bao trùm lên toàn bộ kẻ địch.",
+                "type": "poison",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            }
+        },
+        "gladiator": {
+            "fire_slash": {
+                "name": "Hỏa Kiếm",
+                "description": "Thanh kiếm cùng với sức nóng của lửa địa ngục thiêu rụi những kẻ địch bị chém bởi nó.",
+                "type": "fire",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "shadow_path": {
+                "name": "Đường Kiếm Bóng Tối",
+                "description": "{name} xoáy lưỡi kiếm bắn ra luồng sóng năng lượng hắc ám.",
+                "type": "dark",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "lunge": {
+                "name": "Kiếm Tinh Phong",
+                "description": "Đâm xuyên sâu vào giáp trụ gây tổn thương chí mạng nhờ những luồng gió bắn ra từ thanh kiếm.",
+                "type": "wind",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "crazy": {
+                "name": "Cuồng Nộ",
+                "description": "{name} sẽ tiến vào trạng thái điên cuồng và tàn sát tất cả những gì nhìn nó nhìn thấy.",
+                "type": "fury",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "dragon_power": {
+                "name": "Long Hống",
+                "description": "{name} tập trung sức mạnh và vung mạnh thanh kiếm có sức công phá ngang ngửa với rồng đánh bay kẻ địch lân cận.",
+                "type": "dragon",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:flame_strike": {
+                "name": "Phất Lửa",
+                "description": "Chuyển hóa năng lượng của bản thân thành ngọn lửa và chém tan kẻ địch xung quanh.",
+                "type": "fire",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:impale": {
+                "name": "Bão Kiếm",
+                "description": "Chuyển hóa năng lượng của bản thân thành một cơn lốc bao bọc lấy thanh kiếm, khi đâm cơn lốc từ thanh kiếm sẽ phá nát nội tạng kẻ địch.",
+                "type": "wind",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:rageful_blow": {
+                "name": "Địa Chấn",
+                "description": "Cơn thịnh nộ của {name} đã phá hủy cả mặt đất tạo nên những vết nứt thiêu đốt kẻ địch trong phạm vi.",
+                "type": "fury",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:dragon_halberd": {
+                "name": "Long Phá",
+                "description": "{name} tụ lực vào thanh kiếm của rồng rồi chém ra đao khí hủy diệt tất cả trên đường đi của nó.",
+                "type": "dragon",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:death_sword": {
+                "name": "Tử Kiếm",
+                "description": "{name} nhảy xổ vào kẻ địch làm hoảng sợ và rút máu chúng làm nó đau đớn và chết một cách đau đớn.",
+                "type": "dark",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            }
+        },
+        "archer": {
+            "piercing_arrow": {
+                "name": "Nhiễm Khuẩn",
+                "description": "Bắn ra những mũi tên bị tẩm độc vào kẻ thù khiến chúng bị suy yếu.",
+                "type": "poison",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "arrow_dance": {
+                "name": "Vũ Điệu Xạ Tiễn",
+                "description": "{name} nhào lộn giữ khoảng cách với kẻ địch và bắn ra ba mũi tên gần nhất.",
+                "type": "markslinger",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "fire_arrow": {
+                "name": "Hỏa Tiễn",
+                "description": "Các phát bắn của {name} sẽ thiêu đốt những kẻ địch trúng phải nó.",
+                "type": "fire",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ice_arrow": {
+                "name": "Băng Tiễn",
+                "description": "Kẻ địch dính phải sẽ chịu hiệu ứng rét cóng.",
+                "type": "ice",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "break_the_arrows": {
+                "name": "Phá Vân Tiễn",
+                "description": "Mũi tên của {name} xuyên thủng bất kì thứ gì nó đi qua.",
+                "type": "wind",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:storm_surge": {
+                "name": "Bão Tố Nổi Dậy",
+                "description": "Bắn ra hàng loạt mũi tên được Zeus phù phép, tạo ra một vòi rồng hút tất cả sinh vật xung quanh nó.",
+                "type": "wind",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:arrow_rain": {
+                "name": "Độc Suy Nhược",
+                "description": "{name} bắn ra một làn mưa tên bị tẩm tộc làm suy yếu và hút cạn sự sống của bất kì sự sống nào nó chạm vào.",
+                "type": "poison",
+                "damagae": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:arrow_scattering": {
+                "name": "Tán Xạ Tiễn",
+                "description": "{name} bắn ra loạt mũi tên gây sát thương theo hình nón.",
+                "type": "markslinger",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:grand_fire_arrow": {
+                "name": "Thảm Lửa",
+                "description": "Bắn ra một mũi tên cực mạnh thiêu đốt mọi thứ trên đường đi và phát nổ khi chạm vào kẻ địch.",
+                "type": "fire",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:grand_ice_arrow": {
+                "name": "Đại Băng Tiễn",
+                "description": "Chuyển hóa năng lượng thành một mũi tên, kẻ địch trúng phải sẽ bị đóng băng.",
+                "type": "ice",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            }
+        },
+        "healer": {
+            "love_angel": {
+                "name": "Thiên Sứ Yêu Thương",
+                "description": "Hồi máu cho đồng minh gần bản thân nhất.",
+                "buff": [
+                    {
+                        "name": "hoi_mau",
+                        "value": 35
+                    }
+                ],
+                "type": "angel",
+                "damage": 0,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "god's_protection": {
+                "name": "Sự Bảo Hộ Của Thần",
+                "description": "Tăng khả năng hồi phục cho đồng đội yếu máu nhất trong đội",
+                "type": "god",
+                "buff": [
+                    {
+                        "name": "tang_hoi_mau",
+                        "value": 3,
+                        "time": 8
+                    }
+                ],
+                "damage": 0,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "salvation": {
+                "name": "Cứu Rỗi",
+                "description": "Tạo một lá chắn cho đồng minh yếu máu nhất và tăng tốc chạy cho họ.",
+                "type": "light",
+                "damage": 0,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "whirlwind": {
+                "name": "Gió Xoáy",
+                "description": "{name} tạo ra một con lốc đẩy lùi tất cả kẻ địch ra ngoài.",
+                "type": "wind",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "projected_forest": {
+                "name": "Rừng Sâu Bảo Hộ",
+                "description": "{name} triệu hồi ra những nhánh cây biến thành bộ giáp bảo vệ cho đồng đội.",
+                "type": "forest",
+                "buff": [
+                    {
+                        "name": "giap",
+                        "value": 40
+                    }
+                ],
+                "damage": 0,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:forest_music": {
+                "name": "Khúc Nhạc Rừng Sâu",
+                "description": "{name} tạo ra pháp trận xung quanh đồng đội giúp những đồng đội được tăng tốc và hồi máu. Ngoài ra kẻ địch ở trong pháp trận sẽ bị làm chậm.",
+                "type": "forest",
+                "buff": [
+                    {
+                        "name": "hoi_mau",
+                        "value": 60
+                    }
+                ],
+                "damage": 0,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:fortified_fortress": {
+                "name": "Pháo Đài Kiên Cố",
+                "description": "Tạo ra một bức tường gió bất khả xâm phạm xung quanh đồng minh và tăng giáp, khả năng hồi máu cho họ.",
+                "type": "wind",
+                "damage": 10,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:path_of_repentance": {
+                "name": "Con Đường Sám Hối",
+                "description": "Vẽ ra con đường ánh sáng đẩy tất cả kẻ địch ra và hồi máu cho đồng minh ở trên nó.",
+                "type": "light",
+                "buff": [
+                    {
+                        "name": "hoi_mau",
+                        "value": 86
+                    }
+                ],
+                "damage": 0,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:heaven's_blessing": {
+                "name": "Thiên Giới Ban Phước",
+                "description": "Tạo ra một ma trận hồi máu cho đồng minh theo lượng sát thương gây ra và giảm khả năng hồi phục của kẻ địch trong ma trận.",
+                "buff": [
+                    {
+                        "name": "hoi_mau",
+                        "value": 100
+                    }
+                ],
+                "debuff": [
+                    {
+                        "name": "giam_hoi_mau",
+                        "value": 4
+                    }
+                ],
+                "type": "angel",
+                "damage": 0,
+                "mana_cost": 10,
+                "cooldown": 10
+            },
+            "ultimate:god_rain": {
+                "name": "Mưa Thần",
+                "description": "Tạo ra một cơn mưa hồi máu cho tất cả đồng đội và giảm giáp của tất cả kẻ địch trên bản đồ.",
+                "type": "god",
+                "buff": [
+                    {
+                        "name": "hoi_mau",
+                        "value": 100
+                    }
+                ],
+                "damage": 0,
+                "mana_cost": 10,
+                "cooldown": 10
+            }
+        }
+    }
+}

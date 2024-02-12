@@ -1,0 +1,19 @@
+{
+    "name": "Quỳnh Như",
+    "ID": "100018842511186",
+    "shield": 0,
+    "coins": 2301,
+    "Island": {
+        "level": 1,
+        "coinsLV": 200,
+        "data": {
+            "tower": 0,
+            "tree": 0,
+            "boat": 0,
+            "pet": 0,
+            "chest": 0
+        }
+    },
+    "spin": 9999,
+    "timeRegister": "14:09:48, 7/3/2022"
+}

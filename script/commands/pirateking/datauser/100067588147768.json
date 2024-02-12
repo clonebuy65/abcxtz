@@ -1,0 +1,18 @@
+{
+    "ID": "100067588147768",
+    "shield": 3,
+    "coins": 36000,
+    "Island": {
+        "level": 1,
+        "coinsLV": 200,
+        "data": {
+            "tower": 0,
+            "tree": 0,
+            "boat": 0,
+            "pet": 0,
+            "chest": 0
+        }
+    },
+    "spin": 26,
+    "timeRegister": "17:17:10, 7/3/2022"
+}

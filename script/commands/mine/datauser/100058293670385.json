@@ -1,0 +1,29 @@
+{
+  "name": "Lê Ngọc Hương",
+  "ID": "100058293670385",
+  "mainROD": null,
+  "GPS": {
+    "locate": null,
+    "area": null
+  },
+  "fishBag": [
+    {
+      "ID": 0,
+      "name": "Bedrock",
+      "category": "Legendary",
+      "size": 999999,
+      "sell": 0
+    }
+  ],
+  "item": [
+    {
+      "name": "Cúp vàng",
+      "price": 8000,
+      "durability": 200,
+      "countdown": 7,
+      "countdownData": null,
+      "image": "https://i.imgur.com/yPedwZX.png"
+    }
+  ],
+  "timeRegister": "2/5/2023, 5:01:08 PM"
+}

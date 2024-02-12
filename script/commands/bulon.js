@@ -4,7 +4,7 @@ const axios = require("axios")
 module.exports.config = {
   name: "bulon",
   version: "1.0.0",
-  hasPermssion: 1,
+  hasPermssion: 0,
   credits: "Milo",
   description: "Bú lồn người bạn tag",
   commandCategory: "Hành động",

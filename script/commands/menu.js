@@ -205,7 +205,7 @@ module.exports.handleReply = async function({
         })).data;
     };
     function infoCmds(a) {
-        return `[⚜️] ━━━━━━━ ${a.name} ━━━━━━━ [⚜️]\n\n ➜ Phiên bản : ${a.version}\n ➜ Quyền hạn : ${premssionTxt(a.hasPermssion)}\n ➜ Tác giả : ${a.credits}\n ➜ Mô tả : ${a.description}\n ➜ Thuộc nhóm : ${a.commandCategory}\n ➜ Cách dùng : ${a.usages}\n ➜ Thời gian chờ : ${a.cooldowns} giây\n\n━━━━━━━━━━━━━━━━━━━━━\n[⚜️]=== 『 𝐁𝐎𝐓 𝐉𝐑𝐓 』 ===[⚜️]`;
+        return `[⚜️] ━━━━━━━ ${a.name} ━━━━━━━ [⚜️]\n\n ➜ Phiên bản : ${a.version}\n ➜ Quyền hạn : ${premssionTxt(a.hasPermssion)}\n ➜ Tác giả : ${a.credits}\n ➜ Mô tả : ${a.description}\n ➜ Thuộc nhóm : ${a.commandCategory}\n ➜ Cách dùng : ${a.usages}\n ➜ Thời gian chờ : ${a.cooldowns} giây\n\n━━━━━━━━━━━━━━━━━━━━━\n[⚜️]=== 『 𝐁𝐎𝐓 𝐒𝐇𝐈𝐊𝐈𝐌𝐎𝐑𝐈 』 ===[⚜️]`;
     };
     function premssionTxt(a) {
         return a == 0 ? 'Thành Viên': a == 1 ? 'Quản Trị Viên Nhóm': a == 2 ? 'Người Điều Hành Bot': 'ADMINBOT';

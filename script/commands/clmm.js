@@ -46,8 +46,8 @@ module.exports.run = async function ({api, event, args, Users, Currencies }) {
     if (!coins) return api.sendMessage("Vui Lòng Nhập Tiền Cược!", threadID, messageID);
     var money = (await Currencies.getData(senderID)).money
     if(money < parseInt(coins)) return api.sendMessage('Hong Đủ Tiền Bé Ơi!', threadID, messageID);
-    if(parseInt(coins) < 100000000000) return api.sendMessage('Min 100.000.000.000 bé ơi!', threadID, messageID);
-    if(parseInt(coins) > 99999999999999999999999) return api.sendMessage('Max 99.999.999.999.999.999.999.999 Bé Ơi!', threadID, messageID);
+    if(parseInt(coins) < 10000) return api.sendMessage('Min 10.000 bé ơi!', threadID, messageID);
+    if(parseInt(coins) > 1000000000000) return api.sendMessage('Max 1.000.000.000.000 Bé Ơi!', threadID, messageID);
     //check win
     var c = [2, 4, 6, 8]
     var l = [1, 3, 5, 7]

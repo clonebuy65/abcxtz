@@ -2,7 +2,7 @@ module.exports.config = {
     name: 'dhbcemoji',
     version: '10.02',
     hasPermssion: 0,
-    credits: 'ƠMilo',
+    credits: 'Milo',
     description: 'Game đuổi hình bắt chữ bằng emoji',
     commandCategory: 'Game',
     usages: 'dhbcemoji',

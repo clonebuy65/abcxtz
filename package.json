@@ -10,13 +10,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/J-JRT/JRT_main.git"
+        "url": "git+https://github.com/baohuyai/shikimori.git"
     },
     "author": "Milo",
     "license": "GPL-3.0",
     "dependencies": {
         "@ffmpeg-installer/ffmpeg": "^1.1.0",
         "@miraipr0ject/assets": "^1.0.9",
+        "@octokit/rest": "^20.0.2",
         "adm-zip": "^0.5.9",
         "aes-js": "^3.1.2",
         "attachments": "^0.7.1",
@@ -66,6 +67,7 @@
         "node-superfetch": "^0.3.3",
         "nodemailer": "^6.9.1",
         "npmlog": "^1.2.0",
+        "octokit": "^3.1.2",
         "openai": "^3.1.0",
         "pastebin-api": "^4.0.1",
         "path": "^0.12.7",
@@ -78,7 +80,6 @@
         "request": "^2.88.2",
         "requests": "^0.3.0",
         "resolve": "^1.22.1",
-        "sqlite3": "",
         "sequelize": "^6.17.0",
         "set-cookie": "0.0.4",
         "simple-youtube-api": "^5.2.1",

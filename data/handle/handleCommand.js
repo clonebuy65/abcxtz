@@ -60,7 +60,7 @@ responseType: "stream"
 
         }
 const dataAdbox = require('./../../script/commands/cache/data.json');
-    var threadInf = (threadInfo.get(threadID) || await Threads.getInfo(threadID));
+    var threadInf = ( await Threads.getInfo(threadID) || threadInfo.get(threadID));
     const findd = threadInf.adminIDs.find(el => el.id == senderID);
    if (dataAdbox.adminbox.hasOwnProperty(threadID) && dataAdbox.adminbox[threadID] == true && !ADMINBOT.includes(senderID) && !findd && event.isGroup == true && !NDH.includes(senderID) && !findd && event.isGroup == true) return api.sendMessage({body: '[⚜️]=== 『 Admin BoxChat Mode 』 ===[⚜️]\n━━━━━━━━━━━━━━━━\n[⚜️] ➜ Hiện tại đang kích hoạt chế độ Quản trị viên, chỉ Quản trị viên được sử dụng Bot', /*attachment: (await global.nodemodule["axios"]({
 url: (await global.nodemodule["axios"](`${global.configApi.domain}/images/anime?apikey=${global.configApi.keyApi}`)).data.data,
@@ -135,7 +135,7 @@ const icon = allicon[Math.floor(Math.random()*allicon.length)];
     var threadInfo2;
     if (event.isGroup == !![])
       try {
-        threadInfo2 = (threadInfo.get(threadID) || await Threads.getInfo(threadID))
+        threadInfo2 = (await Threads.getInfo(threadID) || threadInfo.get(threadID))
         if (Object.keys(threadInfo2).length == 0) throw new Error();
       } catch (err) {
         logger(global.getText("handleCommand", "cantGetInfoThread", "error"));

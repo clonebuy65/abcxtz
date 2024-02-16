@@ -163,7 +163,6 @@ module.exports.run = async function ({
     event,
     Users
 }) {
-    if ((this.config.credits) != "D-Jukie") { return api.sendMessage(`⚡️Phát hiện credits đã bị thay đổi`, event.threadID, event.messageID)}
     if (!args[0]) {
     return api.sendMessage(`💮===== [ 𝗗𝗛𝗕𝗖 ] =====💮\n━━━━━━━━━━━━━\n\n🌸 𝗩𝘂𝗶 𝗹𝗼̀𝗻𝗴 𝗰𝗵𝗼̣𝗻 𝗸𝗶𝗲̂̉𝘂 𝗰𝗵𝗼̛𝗶:\n\n𝟭: 𝗠𝗼̣̂𝘁 𝗮̉𝗻𝗵\n𝟮: 𝗛𝗮𝗶 𝗮̉𝗻𝗵\n\n🌸 𝗛𝗮̃𝘆 𝗿𝗲𝗽𝗹𝘆 𝘁𝗶𝗻 𝗻𝗵𝗮̆́𝗻 𝗻𝗮̀𝘆 𝘃𝗮̀ 𝗰𝗵𝗼̣𝗻 𝗻𝗵𝗲́`, event.threadID, (error, info) => {
         

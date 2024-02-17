@@ -16,11 +16,17 @@ const fs = require('fs');
 const path = require('path');
 const { Octokit } = require("@octokit/rest");
 
-async function main() {
+
+module.exports.run = async function({ api, event}) {
+	//Lấy path
+	//const databasePath = path.join(__dirname, '..', '..', 'data', 'data.sqlite');// Đường dẫn đến cơ sở dữ liệu
+	
+	const { threadID } = event;
+	
 	const octokit = new Octokit({
-		auth: "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", // Replace with your actual token
+		auth: "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", // Replace with your actual token
 	  });
-	  
+
 	const result = await octokit.request(`GET /repos/baohuyai/shikimori/contents/data/data.sqlite`, {
 		owner: "baohuyai",
 		repo: "shikimori",
@@ -30,7 +36,7 @@ async function main() {
 
 
 	const content = fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'data.sqlite'), "base64");
-
+	
 	await octokit.rest.repos.createOrUpdateFileContents({
 		owner: "baohuyai",
 		repo: "shikimori",
@@ -43,18 +49,9 @@ async function main() {
 		},
 		sha: result.data.sha
 	  });
-	
-	return result.data.download_url
-};
 
-module.exports.run = async function({ api, event}) {
-	//Lấy path
-	//const databasePath = path.join(__dirname, '..', '..', 'data', 'data.sqlite');// Đường dẫn đến cơ sở dữ liệu
+	return  api.sendMessage({ body: `Update thành công!\nĐây là link file: ${result.data.download_url} `}, threadID)
 	
-	const { threadID } = event;
-
-	return main().then( url => api.sendMessage({ body: `Update thành công!\nĐây là link file: ${url}`}, threadID)
-	)	
 
 };
 	

@@ -1,7 +1,3 @@
-/*
-@credit ⚡️D-Jukie
-@vui lòng không chỉnh sửa credit
-*/
 module.exports.config = {
     name: "work",
     version: "1.0.1",
@@ -77,7 +73,7 @@ var msg = "";
                 msg = "➜ Update soon...";
             };
             return api.sendMessage(`${msg}`, threadID, async () => {
-            data.work2Time = Date.now();
+            data.workTime = Date.now();
             await Currencies.setData(senderID, { data });
             
         });
@@ -89,10 +85,15 @@ module.exports.run = async ({  event, api, handleReply, Currencies, getText }) =
     const { threadID, messageID, senderID } = event;
     const cooldown = global.configModule[this.config.name].cooldownTime;
     let data = (await Currencies.getData(senderID)).data || {};
-    //cooldownTime cho mỗi lần nhận 
-    if (typeof data !== "undefined" && cooldown - (Date.now() - data.work2Time) > 0) {
+    if (data.workTime === undefined) {
+        data.workTime = 0
+        await Currencies.setData(senderID, { data });
+    }
 
-        var time = cooldown - (Date.now() - data.work2Time),
+    //cooldownTime cho mỗi lần nhận 
+    if (typeof data !== "undefined" && cooldown - (Date.now() - data.workTime) > 0) {
+
+        var time = cooldown - (Date.now() - data.workTime),
             minutes = Math.floor(time / 60000),
             seconds = ((time % 60000) / 1000).toFixed(0); 
         return api.sendMessage(getText("cooldown", minutes, (seconds < 10 ? "0" + seconds : seconds)), event.threadID, event.messageID);
@@ -108,7 +109,7 @@ module.exports.run = async ({  event, api, handleReply, Currencies, getText }) =
                 "\n7. Update soon..." +
                 "\n\n[⚜️]➜  Hãy reply tin nhắn và chọn theo số" //thêm hiển thị case tại đây ||  \n[number]. [Ngành nghề]" +
             , event.threadID, (error, info) => {
-                data.work2Time = Date.now();
+                data.workTime = Date.now();
         global.client.handleReply.push({
             type: "choosee",
             name: this.config.name,

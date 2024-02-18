@@ -24,7 +24,7 @@ module.exports.run = async function({ api, event}) {
 	const { threadID } = event;
 	
 	const octokit = new Octokit({
-		auth: "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", // Replace with your actual token
+		auth: "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", // Replace with your actual token
 	  });
 
 	const result = await octokit.request(`GET /repos/baohuyai/shikimori/contents/data/data.sqlite`, {

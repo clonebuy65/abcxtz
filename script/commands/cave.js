@@ -57,7 +57,7 @@ var msg = "";
                 msg = "⚡️Update soon...";
             };
             return api.sendMessage(`${msg}`, threadID, async () => {
-            data.work2Time = Date.now();
+            data.caveTime = Date.now();
             await Currencies.setData(senderID, { data });
             
         });
@@ -69,26 +69,22 @@ module.exports.run = async ({  event, api, handleReply, Currencies, getText }) =
     const { threadID, messageID, senderID } = event;
     const cooldown = global.configModule[this.config.name].cooldownTime;
     let data = (await Currencies.getData(senderID)).data || {};
-    if (data.work2Time === undefined) {
-        data.work2Time = Date.now()
+    if (data.caveTime === undefined) {
+        data.caveTime = 0
         await Currencies.setData(senderID, { data });
     }
 
-    console.log(cooldown)
-    console.log(Date.now())
-    console.log(data.work2Time)
-
     //cooldownTime cho mỗi lần nhận 
-    if (typeof data !== "undefined" && cooldown - (Date.now() - data.work2Time) > 0) {
+    if (typeof data !== "undefined" && cooldown - (Date.now() - data.caveTime) > 0) {
         
-        var time = cooldown - (Date.now() - data.work2Time),
+        var time = cooldown - (Date.now() - data.caveTime),
             minutes = Math.floor(time / 600000),
             seconds = ((time % 600000) / 10000).toFixed(0); 
-        console.log(time)
+
         return api.sendMessage(getText("cooldown", minutes, (seconds < 10 ? "0" + seconds : seconds)), event.threadID, event.messageID);
     }
     else {    
-        console.log('chay')
+
     return api.sendMessage({body:
         "🏮===𝐏𝐇𝐎̂́ 𝐇𝐎𝐀 𝐊𝐈𝐄̂̀𝐔===🏮" +
         "\n\n𝟏. 𝐏𝐡𝐨̂́ 𝐓𝐫𝐚̂̀𝐧 𝐃𝐮𝐲 𝐇𝐮̛𝐧𝐠 🎀" +
@@ -99,7 +95,7 @@ module.exports.run = async ({  event, api, handleReply, Currencies, getText }) =
         "\n𝟔. 𝐊𝐡𝐚́𝐜𝐡 𝐒𝐚̣𝐧 𝐘 𝐍𝐮 💈" +
         "\n\n𝐇𝐚̃𝐲 𝐑𝐞𝐩𝐥𝐚𝐲 𝐒𝐓𝐓 𝐂𝐡𝐨̣𝐧 𝐊𝐡𝐮 𝐕𝐮̛̣𝐜 𝐇𝐚̀𝐧𝐡 𝐍𝐠𝐡𝐞̂̀ ❤️"
         ,attachment: fs.createReadStream(__dirname + `/cache/work.jpeg`)}, event.threadID, (error, info) => {
-                data.work2Time = Date.now();
+                data.caveTime = Date.now();
         global.client.handleReply.push({
             type: "choosee",
             name: this.config.name,

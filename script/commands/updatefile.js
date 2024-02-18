@@ -5,7 +5,7 @@ module.exports.config = {
 	credits: "Milo", 
 	description: "Cập nhật file quann trọng", 
 	commandCategory: "system", 
-	usages: "update [file muốn update]",
+	usages: "update file",
 	cooldowns: 1, 
 	dependencies: {
 		"fs": ""
@@ -17,14 +17,14 @@ const path = require('path');
 const { Octokit } = require("@octokit/rest");
 
 
-module.exports.run = async function({ api, event}) {
+module.exports.run = async function({ api, event, args}) {
 	//Lấy path
 	//const databasePath = path.join(__dirname, '..', '..', 'data', 'data.sqlite');// Đường dẫn đến cơ sở dữ liệu
 	
 	const { threadID } = event;
 	
 	const octokit = new Octokit({
-		auth: "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", // Replace with your actual token
+		auth: args[0], // Replace with your actual token
 	  });
 
 	const result = await octokit.request(`GET /repos/baohuyai/shikimori/contents/data/data.sqlite`, {

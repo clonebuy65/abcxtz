@@ -16,7 +16,6 @@ module.exports. run = ({api, event}) => {
 module.exports.handleEvent = async ({ Users, api, event}) => {
 	const fs = require("fs");
 	const moment = require("moment-timezone");
-	
   let { senderID, messageID, threadID } = event;
   const so_lan_spam = 3; // số lần spam, vượt quá sẽ bị ban
   const thoi_gian_spam = 50000; // 60000 millisecond (1 phút)

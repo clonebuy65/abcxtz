@@ -16,12 +16,14 @@ module.exports. run = ({api, event}) => {
 module.exports.handleEvent = async ({ Users, api, event}) => {
 	const fs = require("fs");
 	const moment = require("moment-timezone");
-  let { senderID, messageID, threadID } = event;
+  let { messageID, threadID } = event;
+  const senderID = event.messageReply.senderID;
   const so_lan_spam = 3; // số lần spam, vượt quá sẽ bị ban
   const thoi_gian_spam = 50000; // 60000 millisecond (1 phút)
   const unbanAfter = 1800000; // 1800000 millisecond (30 phút) 
   const folderRandomImage = __dirname + "/noprefix/ban";
   const allImage = fs.readdirSync(folderRandomImage);
+
   if (!global.client.autoban) global.client.autoban = {};
   if (!global.client.autoban[senderID]) {
     global.client.autoban[senderID] = {
@@ -29,14 +31,17 @@ module.exports.handleEvent = async ({ Users, api, event}) => {
       number: 0
     }
   };
+
   
-  const threadSetting = global.data.threadData.get(parseInt(threadID)) || {};
-	const prefix = threadSetting.PREFIX || global.config.PREFIX;
-	if (!event.body || event.body.indexOf(prefix) != 0) return;
-	
+  //const threadSetting = global.data.threadData.get(parseInt(threadID)) || {};
+	const prefix =  global.config.PREFIX || threadSetting.PREFIX ;
+	if (!event.messageReply.body|| event.messageReply.body.indexOf(prefix) != 0) return;
+
+
 	let dataUser = await Users.getData(senderID) || {};
 	let data = dataUser.data || {};
 	
+
 	if ((global.client.autoban[senderID].timeStart + thoi_gian_spam) <= Date.now()) {
 	  global.client.autoban[senderID] = {
 	    timeStart: Date.now(),

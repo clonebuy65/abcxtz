@@ -1,6 +1,6 @@
 //6628568379%7Cc1e620fa708a1d5696fb991c1bde5662
 module.exports.config = {
-    name: "ad",
+    name: "adinfo",
     version: "1.0.0",
     hasPermssion: 0,
     credits: "Milo",

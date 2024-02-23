@@ -144,7 +144,6 @@ module.exports.handleEvent = async function ({
   ) {
     let data = (await Users.getData(id)).data || {}
     var namethread = datathread.threadName
-     api.removeUserFromGroup(id, threadID)
     return (
       (data.banned = true),
       (data.reason = 'Chửi bot' || null),

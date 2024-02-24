@@ -5,7 +5,7 @@ module.exports.config = {
 	credits: "Milo",
 	description: "Chơi tài xỉu",
 	commandCategory: "Game",
-    usages: "taixiu [tài/xỉu] [số tiền]",
+    usages: "taixiu [tài/xỉu] [số tiền, allin]",
     cooldowns: 0
 };
 const axios = require('axios');

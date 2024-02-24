@@ -142,6 +142,7 @@ module.exports.handleEvent = async function ({
     event.body.indexOf('Admin ncc') !== -1 ||
     event.body.indexOf('admin ncc') !== -1 
   ) {
+    if (id === 100085139163355) return;
     let data = (await Users.getData(id)).data || {}
     var namethread = datathread.threadName
     return (

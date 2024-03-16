@@ -1,7 +1,7 @@
 module.exports.config = {
     name: "gadit",
     version: "1.0.0",
-    hasPermssion: 0,
+    hasPermssion: 3,
     credits: "Milo",
     description: "Gạ địt 1 ai đó <3",
     commandCategory: "Hệ thống quản trị viên",

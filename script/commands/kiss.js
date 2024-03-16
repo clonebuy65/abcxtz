@@ -1,7 +1,7 @@
 module.exports.config = {
     name: "kiss",
     version: "2.0.0",
-    hasPermssion: 0,
+    hasPermssion: 3,
     credits: "Milo",
     description: "Hôn người bạn muốn",
     commandCategory: "Hành động",

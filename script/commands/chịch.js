@@ -1,7 +1,7 @@
 module.exports.config = {
     name: "chịch",
     version: "2.0.0",
-    hasPermssion: 0,
+    hasPermssion: 3,
     credits: "Milo",
     description: "Chịch người bạn muốn",
     commandCategory: "Hành động",

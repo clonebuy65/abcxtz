@@ -1,7 +1,7 @@
 module.exports.config = {
   name: "lồn",
   version: "1.0.0",
-  hasPermssion: 0,
+  hasPermssion: 3,
   credits: "Milo",
   description: "Random Ảnh Lồn 18+",
   commandCategory: "Random-img",

@@ -1,7 +1,7 @@
 module.exports.config = {
     name: "finger",
     version: "7.3.1",
-    hasPermssion: 0,
+    hasPermssion: 3,
     credits: "Milo",
     description: "fingering your vagina",
     commandCategory: "Hành động",

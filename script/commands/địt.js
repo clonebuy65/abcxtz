@@ -1,7 +1,7 @@
 module.exports.config = {
     name: "địt",
     version: "3.1.1",
-    hasPermssion: 0,
+    hasPermssion: 3,
     credits: "Milo  ",
     description: "địt ai đó",
     commandCategory: "Hành động",

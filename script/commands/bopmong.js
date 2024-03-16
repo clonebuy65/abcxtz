@@ -3,7 +3,7 @@ const axios = require("axios")
 module.exports.config = {
   name: "bopmong",
   version: "1.0.0",
-  hasPermssion: 0,
+  hasPermssion: 3,
   credits: "Milo",
   description: "Bóp mông người bạn tag",
   commandCategory: "Hành động",

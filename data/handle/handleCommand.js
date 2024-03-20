@@ -141,7 +141,7 @@ const icon = allicon[Math.floor(Math.random()*allicon.length)];
         logger(global.getText("handleCommand", "cantGetInfoThread", "error"));
       }
        var permssion = 0;
-    var threadInfoo = ( await Threads.getInfo(threadID) || threadInfo.get(threadID));
+    var threadInfoo = (await Threads.getInfo(threadID) || threadInfo.get(threadID));
     const find = threadInfoo.adminIDs.find(el => el.id == senderID);
     if (ADMINBOT.includes(senderID.toString())) permssion = 3;
     else if (NDH.includes(senderID.toString())) permssion = 2;

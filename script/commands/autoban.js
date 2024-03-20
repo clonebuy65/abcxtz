@@ -27,7 +27,6 @@ module.exports.handleEvent = async function ({
   var gio = moment.tz('Asia/Ho_Chi_Minh').format('HH:mm:ss DD/MM/YYYY')
   const time = moment.tz('Asia/Ho_Chi_minh').format('HH:MM:ss L')
   const random = ["Chúc bạn ăn ban vui vẻ 💓", "Bạn ngu ngốc lắm!!! Quá tệ ☠️", "Bớt chửi lại cho đời thanh xuân nghen 😘", "Ngu thì đừng thể hiện nhé?", "Bạn xứng đáng ban ngàn năm!"];
-  console.log(event);
   if (!event.body) {
     return
   }

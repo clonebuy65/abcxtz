@@ -1,7 +1,7 @@
 const fs = require("fs-extra"),
     axios = require("axios")
 module.exports.config = {
-    name: "autodown",
+    name: "autodownvip",
     version: "1.0.0",
     hasPermssion: 0,
     credits: "Milo",

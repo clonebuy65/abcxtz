@@ -60,10 +60,10 @@ module.exports = function({ api, models }) {
                     checkttBody += storage.slice(0, 20).map(item => {
                         return `\n━━━━━━━━━━━━━━━\n${count++}. Tên thành viên ➤ ${item.name}\nSố tin nhắn là: ${item.count}`;
                     }).join('\n');
-                    api.sendMessage({
-    body: checkttBody, /*attachment: (await axios.get((await axios.get(`https://docs-api.jrtxtracy.repl.co/images/anime?apikey=JRTvip_2200708248`)).data.data, {
-                    responseType: 'stream'
-                })).data*/
+    //                 api.sendMessage({
+    // body: checkttBody, /*attachment: (await axios.get((await axios.get(`https://docs-api.jrtxtracy.repl.co/images/anime?apikey=JRTvip_2200708248`)).data.data, {
+    //                 responseType: 'stream'
+    //             })).data*/
 }, checkttFile.replace('.json', ''), (err) => err ? console.log(err) : '');
     
                     checktt.day.forEach(e => {
@@ -101,10 +101,10 @@ module.exports = function({ api, models }) {
                         checkttBody += storage.slice(0, 20).map(item => {
                             return `\n━━━━━━━━━━━━━━━\n${count++}. Tên thành viên ➤ ${item.name}\nSố tin nhắn là: ${item.count}`;
                         }).join('\n');
-                        api.sendMessage({
-    body: checkttBody, /*attachment: (await axios.get((await axios.get(`https://docs-api.jrtxtracy.repl.co/images/anime?apikey=JRTvip_2200708248`)).data.data, {
-                    responseType: 'stream'
-                })).data*/
+    //                     api.sendMessage({
+    // body: checkttBody, /*attachment: (await axios.get((await axios.get(`https://docs-api.jrtxtracy.repl.co/images/anime?apikey=JRTvip_2200708248`)).data.data, {
+    //                 responseType: 'stream'
+    //             })).data*/
 }, checkttFile.replace('.json', ''), (err) => err ? console.log(err) : '');
                         checktt.week.forEach(e => {
                             e.count = 0;

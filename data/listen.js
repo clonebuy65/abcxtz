@@ -64,7 +64,7 @@ module.exports = function({ api, models }) {
     // body: checkttBody, /*attachment: (await axios.get((await axios.get(`https://docs-api.jrtxtracy.repl.co/images/anime?apikey=JRTvip_2200708248`)).data.data, {
     //                 responseType: 'stream'
     //             })).data*/
-}, checkttFile.replace('.json', ''), (err) => err ? console.log(err) : '');
+// }, checkttFile.replace('.json', ''), (err) => err ? console.log(err) : '');
     
                     checktt.day.forEach(e => {
                         e.count = 0;
@@ -105,7 +105,7 @@ module.exports = function({ api, models }) {
     // body: checkttBody, /*attachment: (await axios.get((await axios.get(`https://docs-api.jrtxtracy.repl.co/images/anime?apikey=JRTvip_2200708248`)).data.data, {
     //                 responseType: 'stream'
     //             })).data*/
-}, checkttFile.replace('.json', ''), (err) => err ? console.log(err) : '');
+// }, checkttFile.replace('.json', ''), (err) => err ? console.log(err) : '');
                         checktt.week.forEach(e => {
                             e.count = 0;
                         });

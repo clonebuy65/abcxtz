@@ -10,7 +10,7 @@ module.exports.config = {
     usages: "autodownvip",
     cooldowns: 5
 }
-module.exports.run = async function (api, event) { 
+module.exports. run = async ({ api, event }) => {
     return api.sendMessage({body:"Đây là autodwonvip do Admin Milo tạo ra để tải những video từ link gửi trong nhóm!"}, event.threadID);
 }
 

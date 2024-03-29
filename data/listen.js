@@ -24,101 +24,101 @@ module.exports = function({ api, models }) {
   if (thu == 'Saturday') thu = 'Thứ Bảy'
   var _checked = true;
 
-    const checkttDataPath = __dirname + '/../script/commands/cache/checktt/';
-    setInterval(async () => {
-        const day_now = moment.tz("Asia/Ho_Chi_Minh").day();
-        const _ADMINIDs = [...global.config.NDH, ...global.config.ADMINBOT];
-      try {
-        if (day != day_now) {
-            day = day_now;
-            const checkttData = fs.readdirSync(checkttDataPath).filter(file => {
-              const _ID = file.replace('.json', '');
-              return _ADMINIDs.includes(_ID) || global.data.allThreadID.includes(_ID);
-            });
-            console.log('Bắt Đầu Kiểm Tra Tương Tác Ngày Mới');
-            await new Promise(async resolve => {
-                for (const checkttFile of checkttData) {
-                    const checktt = JSON.parse(fs.readFileSync(checkttDataPath + checkttFile));
-                    let storage = [], count = 1;
-                    for (const item of checktt.day) {
-                        const userName = await Users.getNameUser(item.id) || 'Tên không tồn tại';
-                        const itemToPush = item;
-                        itemToPush.name = userName;
-                        storage.push(itemToPush);
-                    };
-                    storage.sort((a, b) => {
-                        if (a.count > b.count) {
-                            return -1;
-                        }
-                        else if (a.count < b.count) {
-                            return 1;
-                        } else {
-                            return a.name.localeCompare(b.name);
-                        }
-                    });
-                    let checkttBody = '[ Top tương tác của ngày hôm qua ]';
-                    checkttBody += storage.slice(0, 20).map(item => {
-                        return `\n━━━━━━━━━━━━━━━\n${count++}. Tên thành viên ➤ ${item.name}\nSố tin nhắn là: ${item.count}`;
-                    }).join('\n');
-    //                 api.sendMessage({
-    // body: checkttBody, /*attachment: (await axios.get((await axios.get(`https://docs-api.jrtxtracy.repl.co/images/anime?apikey=JRTvip_2200708248`)).data.data, {
-    //                 responseType: 'stream'
-    //             })).data*/
-// }, checkttFile.replace('.json', ''), (err) => err ? console.log(err) : '');
+//     const checkttDataPath = __dirname + '/../script/commands/cache/checktt/';
+//     setInterval(async () => {
+//         const day_now = moment.tz("Asia/Ho_Chi_Minh").day();
+//         const _ADMINIDs = [...global.config.NDH, ...global.config.ADMINBOT];
+//       try {
+//         if (day != day_now) {
+//             day = day_now;
+//             const checkttData = fs.readdirSync(checkttDataPath).filter(file => {
+//               const _ID = file.replace('.json', '');
+//               return _ADMINIDs.includes(_ID) || global.data.allThreadID.includes(_ID);
+//             });
+//             console.log('Bắt Đầu Kiểm Tra Tương Tác Ngày Mới');
+//             await new Promise(async resolve => {
+//                 for (const checkttFile of checkttData) {
+//                     const checktt = JSON.parse(fs.readFileSync(checkttDataPath + checkttFile));
+//                     let storage = [], count = 1;
+//                     for (const item of checktt.day) {
+//                         const userName = await Users.getNameUser(item.id) || 'Tên không tồn tại';
+//                         const itemToPush = item;
+//                         itemToPush.name = userName;
+//                         storage.push(itemToPush);
+//                     };
+//                     storage.sort((a, b) => {
+//                         if (a.count > b.count) {
+//                             return -1;
+//                         }
+//                         else if (a.count < b.count) {
+//                             return 1;
+//                         } else {
+//                             return a.name.localeCompare(b.name);
+//                         }
+//                     });
+//                     let checkttBody = '[ Top tương tác của ngày hôm qua ]';
+//                     checkttBody += storage.slice(0, 20).map(item => {
+//                         return `\n━━━━━━━━━━━━━━━\n${count++}. Tên thành viên ➤ ${item.name}\nSố tin nhắn là: ${item.count}`;
+//                     }).join('\n');
+//     //                 api.sendMessage({
+//     // body: checkttBody, /*attachment: (await axios.get((await axios.get(`https://docs-api.jrtxtracy.repl.co/images/anime?apikey=JRTvip_2200708248`)).data.data, {
+//     //                 responseType: 'stream'
+//     //             })).data*/
+// // }, checkttFile.replace('.json', ''), (err) => err ? console.log(err) : '');
     
-                    checktt.day.forEach(e => {
-                        e.count = 0;
-                    });
-                    checktt.time = day_now;
-                    fs.writeFileSync(checkttDataPath + checkttFile, JSON.stringify(checktt, null, 4));
-                }
-                resolve();
-            })
+//                     checktt.day.forEach(e => {
+//                         e.count = 0;
+//                     });
+//                     checktt.time = day_now;
+//                     fs.writeFileSync(checkttDataPath + checkttFile, JSON.stringify(checktt, null, 4));
+//                 }
+//                 resolve();
+//             })
 
-            await new Promise(async resolve => {
-                if (day_now == 1) {
-                    console.log('Bắt đầu kiểm tra tương tác tuần mới');
-                    for (const checkttFile of checkttData) {
-                        const checktt = JSON.parse(fs.readFileSync(checkttDataPath + checkttFile));
-                        let storage = [], count = 1;
-                        for (const item of checktt.week) {
-                            const userName = await Users.getNameUser(item.id) || 'Tên không tồn tại';
-                            const itemToPush = item;
-                            itemToPush.name = userName;
-                            storage.push(itemToPush);
-                        };
-                        storage.sort((a, b) => {
-                            if (a.count > b.count) {
-                                return -1;
-                            }
-                            else if (a.count < b.count) {
-                                return 1;
-                            } else {
-                                return a.name.localeCompare(b.name);
-                            }
-                        });
-                        let checkttBody = '[ Top tương tác của tuần vừa qua ]';
-                        checkttBody += storage.slice(0, 20).map(item => {
-                            return `\n━━━━━━━━━━━━━━━\n${count++}. Tên thành viên ➤ ${item.name}\nSố tin nhắn là: ${item.count}`;
-                        }).join('\n');
-    //                     api.sendMessage({
-    // body: checkttBody, /*attachment: (await axios.get((await axios.get(`https://docs-api.jrtxtracy.repl.co/images/anime?apikey=JRTvip_2200708248`)).data.data, {
-    //                 responseType: 'stream'
-    //             })).data*/
-// }, checkttFile.replace('.json', ''), (err) => err ? console.log(err) : '');
-                        checktt.week.forEach(e => {
-                            e.count = 0;
-                        });
-                        fs.writeFileSync(checkttDataPath + checkttFile, JSON.stringify(checktt, null, 4));
-                    }
-                }
-                resolve();
-            })
+//             await new Promise(async resolve => {
+//                 if (day_now == 1) {
+//                     console.log('Bắt đầu kiểm tra tương tác tuần mới');
+//                     for (const checkttFile of checkttData) {
+//                         const checktt = JSON.parse(fs.readFileSync(checkttDataPath + checkttFile));
+//                         let storage = [], count = 1;
+//                         for (const item of checktt.week) {
+//                             const userName = await Users.getNameUser(item.id) || 'Tên không tồn tại';
+//                             const itemToPush = item;
+//                             itemToPush.name = userName;
+//                             storage.push(itemToPush);
+//                         };
+//                         storage.sort((a, b) => {
+//                             if (a.count > b.count) {
+//                                 return -1;
+//                             }
+//                             else if (a.count < b.count) {
+//                                 return 1;
+//                             } else {
+//                                 return a.name.localeCompare(b.name);
+//                             }
+//                         });
+//                         let checkttBody = '[ Top tương tác của tuần vừa qua ]';
+//                         checkttBody += storage.slice(0, 20).map(item => {
+//                             return `\n━━━━━━━━━━━━━━━\n${count++}. Tên thành viên ➤ ${item.name}\nSố tin nhắn là: ${item.count}`;
+//                         }).join('\n');
+//     //                     api.sendMessage({
+//     // body: checkttBody, /*attachment: (await axios.get((await axios.get(`https://docs-api.jrtxtracy.repl.co/images/anime?apikey=JRTvip_2200708248`)).data.data, {
+//     //                 responseType: 'stream'
+//     //             })).data*/
+// // }, checkttFile.replace('.json', ''), (err) => err ? console.log(err) : '');
+//                         checktt.week.forEach(e => {
+//                             e.count = 0;
+//                         });
+//                         fs.writeFileSync(checkttDataPath + checkttFile, JSON.stringify(checktt, null, 4));
+//                     }
+//                 }
+//                 resolve();
+//             })
 
-            global.client.sending_top = true;
-        }
-      } catch(e) { console.error(e) }
-    }, 1000 * 20);
+//             global.client.sending_top = true;
+//         }
+//       } catch(e) { console.error(e) }
+//    }, 1000 * 20);
  
  
 	//////////////////////////////////////////////////////////////////////

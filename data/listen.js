@@ -258,36 +258,36 @@ logger.loader(`Ping load toàn bộ commands và events • ${Date.now() - globa
 			}
 			resolve();
 		})
-		for (el of temp) {
-			try {
-				var all = (await Threads.getInfo(el["TID"])).participantIDs;
-			    all.splice(all.indexOf(api.getCurrentUserID()), 1);
-				var body = el.REASON || "MỌI NGƯỜI ƠI", mentions = [], index = 0;
+		// for (el of temp) {
+		// 	try {
+		// 		var all = (await Threads.getInfo(el["TID"])).participantIDs;
+		// 	    all.splice(all.indexOf(api.getCurrentUserID()), 1);
+		// 		var body = el.REASON || "MỌI NGƯỜI ƠI", mentions = [], index = 0;
 				
-			    for (let i = 0; i < all.length; i++) {
-				    if (i == body.length) body += " ‍ ";
-				    mentions.push({
-				  	  tag: body[i],
-				  	  id: all[i],
-				  	  fromIndex: i - 1
-				    });
-			    }
-			} catch (e) { return console.log(e); }
-			var out = {
-				body, mentions
-			}
-			if ("ATTACHMENT" in el) {
-				out.attachment = [];
-				for (a of el.ATTACHMENT) {
-					let getAttachment = (await axios.get(encodeURI(a.url), { responseType: "arraybuffer"})).data;
-					fs.writeFileSync(__dirname + `/../script/commands/cache/${a.fileName}`, Buffer.from(getAttachment, 'utf-8'));
-					out.attachment.push(fs.createReadStream(__dirname + `/../script/commands/cache/${a.fileName}`));
-				}
-			}
-			console.log(out);
-			if ("BOX" in el) await api.setTitle(el["BOX"], el["TID"]);
-			api.sendMessage(out, el["TID"], () => ("ATTACHMENT" in el) ? el.ATTACHMENT.forEach(a => fs.unlinkSync(__dirname + `/../script/commands/cache/${a.fileName}`)) : "");
-		}
+		// 	    for (let i = 0; i < all.length; i++) {
+		// 		    if (i == body.length) body += " ‍ ";
+		// 		    mentions.push({
+		// 		  	  tag: body[i],
+		// 		  	  id: all[i],
+		// 		  	  fromIndex: i - 1
+		// 		    });
+		// 	    }
+		// 	} catch (e) { return console.log(e); }
+		// 	var out = {
+		// 		body, mentions
+		// 	}
+		// 	if ("ATTACHMENT" in el) {
+		// 		out.attachment = [];
+		// 		for (a of el.ATTACHMENT) {
+		// 			let getAttachment = (await axios.get(encodeURI(a.url), { responseType: "arraybuffer"})).data;
+		// 			fs.writeFileSync(__dirname + `/../script/commands/cache/${a.fileName}`, Buffer.from(getAttachment, 'utf-8'));
+		// 			out.attachment.push(fs.createReadStream(__dirname + `/../script/commands/cache/${a.fileName}`));
+		// 		}
+		// 	}
+		// 	console.log(out);
+		// 	if ("BOX" in el) await api.setTitle(el["BOX"], el["TID"]);
+		// 	api.sendMessage(out, el["TID"], () => ("ATTACHMENT" in el) ? el.ATTACHMENT.forEach(a => fs.unlinkSync(__dirname + `/../script/commands/cache/${a.fileName}`)) : "");
+		// }
 
 	}
 	setInterval(checkAndExecuteEvent, tenMinutes/10);

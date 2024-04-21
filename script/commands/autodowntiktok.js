@@ -29,11 +29,17 @@ module.exports.handleEvent = async function ({ api, event, Users }) {
 
 module.exports.downLoad = function (url, api, event) {
     var time = Date.now();
-    var path = __dirname + `/cache/${time}.mp4`;
+
 
     var body = '';
     this.getLink(url).then(res => {
         urldownload = res.data.play
+        if (String(urldownload).includes("mp4")) {
+            var path = __dirname + `/cache/${time}.mp4`;
+        }
+        else {
+            var path = __dirname + `/cache/${time}.mp3`;
+        }
         title =  res.data.title
         view =  res.data.play_count
         tym =  res.data.digg_count
